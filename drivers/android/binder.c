@@ -1177,6 +1177,7 @@ static int to_userspace_prio(int policy, int kernel_priority)
 		return PRIO_TO_NICE(kernel_priority);
 	else
 		return MAX_USER_RT_PRIO - 1 - kernel_priority;
+
 }
 
 static int to_kernel_prio(int policy, int user_priority)
